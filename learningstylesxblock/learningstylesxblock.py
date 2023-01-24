@@ -317,14 +317,17 @@ class LearningStylesXBlock(XBlock):
     @XBlock.json_handler
     def get_formdata(self, data, suffix=''):		
         y = []
-        # for x in data["pregunta-1"]:
-        #     try: 
-        #         y.append(self.stylesAnswers[x])
-        #     except:
-        #         y.append("-")
-        self.testResults = self.results(data)
+        for x in data["answers"]:
+            try: 
+                y.append(self.stylesAnswers[x])
+            except:
+                y.append("-")
+        self.testResults = self.results(y)
         self.testSolved = True
-        self.student_view()
+        return {
+            'testSolved': self.testSolved,
+            'testResults':self.testResults
+            }
 
 	# TO-DO: change this to create the scenarios you'd like to see in the
 	# workbench while developing your XBlock.
