@@ -1,0 +1,64 @@
+<div class="learningstylesxblock_block">
+	
+	<main class="vark-test">
+	
+		{% if testSolved %}
+	
+			<h3 class="vark-test__title" tabindex="-1">
+				Resultados Test VARK
+			</h3>
+			<ul>
+				
+				{% for r in testResults %}
+
+				<li>{{r}}</li>
+
+				{% endfor %}
+
+			</ul>
+		{% else %}
+		
+			<h3 class="vark-test__title" tabindex="-1">
+				El cuestionario VARK
+			</h3>
+			<p style="font-size: 16px; line-height: 25.6px;">
+				Elija la respuesta que mejor explique su preferencia y haga clic en la casilla de al lado.
+			</p>
+			<form id="form" class="vark-test__questions" method="POST" action="get_formdata">
+
+				{% for q in testQuestions %}
+
+				<div class="question" tabindex="-1" aria-label="Pregunta {{forloop.counter}}" role="group">
+					<div class="question__wrapper">
+						<fieldset>
+							<legend class="question__text">
+								{{q.pregunta}}
+							</legend>
+							{% for a in q.respuestas %}
+
+								<div class="answer">
+									<label class="answer__label">
+										<input type="radio" name="pregunta-{{forloop.parentloop.counter}}" id="" class="answer__option" value="{{a}}" required/>
+										{{a}}
+									</label>
+								</div>
+
+							{% endfor %}
+						</fieldset>
+					</div>
+				</div>
+
+				{% endfor %}
+
+				<button id="Send" type="submit" class="vark-test__button">
+					Enviar
+				</button>
+			</form>
+		
+		{% endif %}		
+		
+		
+		
+	</main>
+	
+</div>

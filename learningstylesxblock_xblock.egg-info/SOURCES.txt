@@ -1,0 +1,13 @@
+setup.py
+learningstylesxblock/__init__.py
+learningstylesxblock/learningstylesxblock.py
+learningstylesxblock/static/README.txt
+learningstylesxblock/static/css/learningstylesxblock.css
+learningstylesxblock/static/html/learningstylesxblock.html
+learningstylesxblock/static/js/src/learningstylesxblock.js
+learningstylesxblock_xblock.egg-info/PKG-INFO
+learningstylesxblock_xblock.egg-info/SOURCES.txt
+learningstylesxblock_xblock.egg-info/dependency_links.txt
+learningstylesxblock_xblock.egg-info/entry_points.txt
+learningstylesxblock_xblock.egg-info/requires.txt
+learningstylesxblock_xblock.egg-info/top_level.txt
