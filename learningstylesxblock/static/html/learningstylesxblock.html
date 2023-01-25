@@ -9,13 +9,15 @@
 			</h3>
 			<ul>
 				
-				{% for r in testResults %}
-
-				<li>{{r}}</li>
+				{% for key, value in testResults.items %}
+					
+				<li>{{ key }} : <span class="results">{{ value }}</span></li>
 
 				{% endfor %}
-
+			
 			</ul>
+			<canvas id="grafica"></canvas>
+			<div id="graficaD3"></div>
 		{% else %}
 		
 			<h3 class="vark-test__title" tabindex="-1">
@@ -54,6 +56,8 @@
 					Enviar
 				</button>
 			</form>
+
+			
 		
 		{% endif %}		
 		

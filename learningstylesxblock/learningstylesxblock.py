@@ -276,6 +276,7 @@ class LearningStylesXBlock(XBlock):
         return Template(template_str).render(Context(context))
 
     def results(self, results):
+        lenResults = len(results)
         resultsTest = {
             "V":0,
             "A":0,
@@ -284,10 +285,7 @@ class LearningStylesXBlock(XBlock):
         }
         for r in results:
             resultsTest[r]+=1
-        return ["Visual: "+str(resultsTest["V"]),
-                "Auditive: "+str(resultsTest["A"]),
-                "Reading: "+str(resultsTest["R"]),
-                "Kinesthetic: "+str(resultsTest["K"])]  
+        return resultsTest
 
 	# TO-DO: change this view to display your data your own way.
     @csrf_exempt
@@ -306,9 +304,8 @@ class LearningStylesXBlock(XBlock):
         frag = Fragment(html.format(self=self))
         
         frag.add_css(self.resource_string("static/css/learningstylesxblock.css"))
-        frag.add_javascript_url("http://selene.unicauca.edu.co/static/css2/custom.css")
-        frag.add_javascript_url("http://selene.unicauca.edu.co/static/css/icon_fonts/css/all_icons.min.css")
-        frag.add_javascript_url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800")
+        frag.add_javascript_url("https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js")
+        frag.add_javascript_url("https://d3js.org/d3.v7.min.js")
         frag.add_javascript(self.resource_string("static/js/src/learningstylesxblock.js"))
         frag.initialize_js('LearningStylesXBlock')
         return frag
@@ -338,4 +335,4 @@ class LearningStylesXBlock(XBlock):
             ("LearningStylesXBlock",
                 """<learningstylesxblock/>
                 """),
-        ] 
+        ]
