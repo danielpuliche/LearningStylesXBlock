@@ -4,20 +4,25 @@
 	
 		{% if testSolved %}
 	
-			<h3 class="vark-test__title" tabindex="-1">
+			<h2 class="vark-test__title" tabindex="-1">
 				Resultados Test VARK
-			</h3>
-			<ul>
-				
+			</h2>
+			<ul class="hidden">
 				{% for key, value in testResults.items %}
 					
 				<li>{{ key }} : <span class="results">{{ value }}</span></li>
 
 				{% endfor %}
-			
 			</ul>
-			<canvas id="grafica"></canvas>
-			<div id="graficaD3"></div>
+			<h2 class="vark-test__title" tabindex="-1">
+				Observa los números de tu test:
+			</h2>
+			<canvas class="results__chart" id="graficaB"></canvas>
+			</br>
+			<h2 class="vark-test__title" tabindex="-1">
+				Tu estilo de aprendizaje es <strong>{{ userLearningStyle }}</strong>
+			</h2>
+			<canvas class="results__chart" id="grafica"></canvas>
 		{% else %}
 		
 			<h3 class="vark-test__title" tabindex="-1">
@@ -52,7 +57,7 @@
 
 				{% endfor %}
 
-				<button id="Send" type="submit" class="vark-test__button">
+				<button id="send" type="submit" class="vark-test__button">
 					Enviar
 				</button>
 			</form>
