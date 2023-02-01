@@ -8,3 +8,12 @@ Este XBlock tiene como objetivo obtener el estilo de aprendizaje de los estudian
 - [1. Test VARK](#1-Test-VARK)
 
 1. Test VARK
+VARK es un acrónimo que significa "Modalidad de Aprendizaje Vísuo, Auditivo, Read/Write y Kinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
+
+Los estudiantes visuales aprenden mejor a través de imágenes, gráficos y videos.
+Los estudiantes auditivos aprenden mejor a través del lenguaje hablado y música.
+Los estudiantes read/write aprenden mejor a través de la escritura y la lectura.
+Los estudiantes kinestésicos aprenden mejor a través de la experiencia práctica y la manipulación de objetos.
+
+El test VARK es un cuestionario diseñado para identificar la modalidad de aprendizaje preferida de un individuo. Es importante tener en cuenta que muchas personas pueden tener preferencias múltiples y que estas preferencias pueden variar según el contexto. Sin embargo, comprender la modalidad de aprendizaje preferida puede ayudar a los estudiantes y a los profesores a adaptar su enfoque de enseñanza y aprendizaje para maximizar la comprensión y el retención de la información.
+https://www.orientacionandujar.es/wp-content/uploads/2014/05/TEST-DE-VARK.pdf
