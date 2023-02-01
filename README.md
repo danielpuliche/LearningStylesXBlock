@@ -46,7 +46,7 @@ student_view: Es la vista principal del XBlock y se muestra a los estudiantes cu
 En resumen, este XBlock es un ejemplo de código para crear un test de estilo de aprendizaje y mostrar los resultados a los usuarios en una plataforma de aprendizaje en línea.
 
 ## 2.2 setup.py
-Este código es un archivo de configuración de paquete para un "XBlock" de edX llamado "learningstylesxblock".
+Este código es un archivo de configuración de paquete para un "XBlock"
 
 En la primera línea se importa el módulo "absolute_import" desde el módulo "future". Esto es para garantizar que las importaciones se realicen de manera absoluta y no se confundan con módulos de nombres similares en el mismo paquete.
 
@@ -56,13 +56,14 @@ La función "package_data" es una función genérica que busca los datos de paqu
 
 El método "setup" es una función que se usa para instalar el paquete. Tiene varios argumentos, incluyendo:
 
-name: Nombre del paquete.
-version: Versión del paquete.
-description: Descripción del paquete.
-license: Licencia del paquete.
-packages: Lista de paquetes incluidos en el paquete.
-install_requires: Lista de módulos necesarios para que el paquete funcione.
-entry_points: Un diccionario que especifica las entradas de los puntos de extensión de XBlock.
-package_data: Los datos de paquete, que se obtienen de la función "package_data".
+- name: Nombre del paquete.
+- version: Versión del paquete.
+- description: Descripción del paquete.
+- license: Licencia del paquete.
+- packages: Lista de paquetes incluidos en el paquete.
+- install_requires: Lista de módulos necesarios para que el paquete funcione.
+- entry_points: Un diccionario que especifica las entradas de los puntos de extensión de XBlock.
+- package_data: Los datos de paquete, que se obtienen de la función "package_data".
+
 En este caso, el paquete se llama "learningstylesxblock-xblock" y su versión es "0.1". Se requiere el módulo "XBlock" para su funcionamiento. La entrada del punto de extensión de XBlock es "learningstylesxblock = learningstylesxblock:LearningStylesXBlock", lo que significa que el bloque se registrará con el nombre "learningstylesxblock". Finalmente, los datos de paquete incluyen los archivos en los directorios "static" y "public".
 
