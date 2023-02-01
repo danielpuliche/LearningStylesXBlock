@@ -9,6 +9,7 @@ Este XBlock tiene como objetivo obtener el estilo de aprendizaje de los estudian
 - [2. Scripts](#2-Scripts)
   - [2.1 learningstylesxblock.py](#21-learningstylesxblock.py)
   - [2.2 setup.py](#22-setup.py)
+  - [2.3 learningstylesxblock.js](#23-2.3 learningstylesxblock.js)
 
 # 1. Test VARK
 VARK es un acrónimo que significa "Modalidad de Aprendizaje Vísuo, Auditivo, Read/Write y Kinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
@@ -67,3 +68,14 @@ El método "setup" es una función que se usa para instalar el paquete. Tiene va
 
 En este caso, el paquete se llama "learningstylesxblock-xblock" y su versión es "0.1". Se requiere el módulo "XBlock" para su funcionamiento. La entrada del punto de extensión de XBlock es "learningstylesxblock = learningstylesxblock:LearningStylesXBlock", lo que significa que el bloque se registrará con el nombre "learningstylesxblock". Finalmente, los datos de paquete incluyen los archivos en los directorios "static" y "public".
 
+## 2.3 learningstylesxblock.js
+
+El código muestra una función en JavaScript llamada "LearningStylesXBlock". Esta función es un bloque de aprendizaje en un sistema de aprendizaje en línea que permite al usuario responder a un cuestionario con 16 preguntas y luego muestra los resultados de la encuesta en forma de gráficos.
+
+La función showResults() recarga la página actual. La variable handlerUrl se utiliza para obtener la URL del controlador que se utilizará para enviar los datos del cuestionario.
+
+El evento click del botón "Enviar" es gestionado por la función anónima registrada en el evento click. La función verifica si todas las preguntas han sido respondidas y, de ser así, recopila las respuestas en una matriz y las envía a la dirección especificada en handlerUrl. Si no se han respondido todas las preguntas, se muestra un mensaje de error utilizando una biblioteca de alertas llamada Swal.
+
+La función $(function($) {}) se ejecuta al cargar la página y verifica si existen los elementos "#grafica" o "#graficaB". Si existen, se recopilan los resultados de las respuestas y se llaman a las funciones graficarResultados() o graficarResultadosBarra() para generar los gráficos.
+
+Las funciones graficarResultados() y graficarResultadosBarra() utilizan la biblioteca de gráficos Chart.js para generar gráficos de áreas polares y de barras, respectivamente. Los gráficos muestran los resultados de la encuesta y están etiquetados con cuatro opciones: "Auditivo", "Cinético", "Lectura" y "Visual".
