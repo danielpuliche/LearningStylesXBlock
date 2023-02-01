@@ -11,6 +11,7 @@ Este XBlock tiene como objetivo obtener el estilo de aprendizaje de los estudian
   - [2.2 setup.py](#22-setup.py)
   - [2.3 learningstylesxblock.js](#23 learningstylesxblock.js)
   - [2.4 learningstylesxblock.html](#24 learningstylesxblock.html)
+  - [2.5 learningstylesxblock.css](#25 learningstylesxblock.css)
 
 # 1. Test VARK
 VARK es un acrónimo que significa "Modalidad de Aprendizaje Vísuo, Auditivo, Read/Write y Kinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
@@ -90,3 +91,6 @@ Si se han resuelto los resultados, se muestra el título "Resultados Test VARK" 
 
 Además, se muestra un gráfico (canvas) con la identificación "graficaB". También se muestra el resultado del estilo de aprendizaje del usuario (userLearningStyle) junto con otro gráfico (canvas) con la identificación "grafica". Si los resultados no se han resuelto, se muestra un título "El cuestionario VARK", un párrafo con texto explicativo y un formulario para enviar las respuestas del cuestionario. El formulario consiste en una serie de preguntas que se recorren mediante un bucle "for". Cada pregunta tiene una serie de respuestas que también se recorren mediante otro bucle "for". Las respuestas son opciones de radio con un valor determinado y deben ser seleccionadas antes de enviarse. Finalmente, hay un botón "Enviar" para enviar las respuestas del formulario.
 
+## 2.5 learningstylesxblock.css
+
+Este es un código CSS, utilizado para dar estilo a un documento HTML. Establece la familia de fuentes, colores, márgenes, rellenos, etc. de varios elementos HTML como body, encabezados, párrafos, botones, bloques de preguntas, etiquetas de respuestas, etc. El código utiliza selectores CSS como clases e identificadores para dirigirse a elementos específicos en la página y aplicar estilos a ellos. Los estilos incluyen estilos de fuentes como font-weight, font-size, text-align, font-family, line-height, etc. y estilos de diseño como padding, margin, display, border, etc.
