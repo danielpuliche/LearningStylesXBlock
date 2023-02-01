@@ -45,7 +45,7 @@ student_view: Es la vista principal del XBlock y se muestra a los estudiantes cu
 *get_formdata:* Es un manejador que se utiliza para procesar los datos enviados por el formulario del test. La función recibe los datos del formulario y guarda los resultados en los campos correspondientes. La función también devuelve una respuesta en formato JSON para informar al usuario si el procesamiento fue exitoso o no.
 En resumen, este XBlock es un ejemplo de código para crear un test de estilo de aprendizaje y mostrar los resultados a los usuarios en una plataforma de aprendizaje en línea.
 
-## 2.1 learningstylesxblock.py
+## 2.2 setup.py
 Este código es un archivo de configuración de paquete para un "XBlock" de edX llamado "learningstylesxblock".
 
 En la primera línea se importa el módulo "absolute_import" desde el módulo "future". Esto es para garantizar que las importaciones se realicen de manera absoluta y no se confundan con módulos de nombres similares en el mismo paquete.
