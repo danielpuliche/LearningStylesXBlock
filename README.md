@@ -4,14 +4,15 @@ Este XBlock tiene como objetivo obtener el estilo de aprendizaje de los estudian
 
 
 # Contenido
+- [XBlock-Estilos-de-Aprendizaje](#xblock-estilos-de-aprendizaje)
 - [Contenido](#contenido)
-- [1. Test VARK](#1-Test-VARK)
-- [2. Scripts](#2-Scripts)
-  - [2.1 learningstylesxblock.py](#21-learningstylesxblock.py)
-  - [2.2 setup.py](#22-setup.py)
-  - [2.3 learningstylesxblock.js](#23 learningstylesxblock.js)
-  - [2.4 learningstylesxblock.html](#24 learningstylesxblock.html)
-  - [2.5 learningstylesxblock.css](#25 learningstylesxblock.css)
+- [1. Test VARK](#1-test-vark)
+- [2. Scripts](#2-scripts)
+  - [2.1 learningstylesxblock.py](#21-learningstylesxblockpy)
+  - [2.2 setup.py](#22-setuppy)
+  - [2.3 learningstylesxblock.js](#23-learningstylesxblockjs)
+  - [2.4 learningstylesxblock.html](#24-learningstylesxblockhtml)
+  - [2.5 learningstylesxblock.css](#25-learningstylesxblockcss)
 
 # 1. Test VARK
 VARK es un acrónimo que significa "Modalidad de Aprendizaje Vísuo, Auditivo, Read/Write y Kinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
