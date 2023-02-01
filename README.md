@@ -81,7 +81,7 @@ El evento click del botón "Enviar" es gestionado por la función anónima regis
 
 La función $(function($) {}) se ejecuta al cargar la página y verifica si existen los elementos "#grafica" o "#graficaB". Si existen, se recopilan los resultados de las respuestas y se llaman a las funciones graficarResultados() o graficarResultadosBarra() para generar los gráficos.
 
-Las funciones graficarResultados() y graficarResultadosBarra() utilizan la biblioteca de gráficos Chart.js para generar gráficos de áreas polares y de barras, respectivamente. Los gráficos muestran los resultados de la encuesta y están etiquetados con cuatro opciones: "Auditivo", "Cinético", "Lectura" y "Visual".
+Las funciones graficarResultados() y graficarResultadosBarra() utilizan la biblioteca de gráficos Chart.js para generar gráficos de áreas polares y de barras, respectivamente. Los gráficos muestran los resultados de la encuesta y están etiquetados con cuatro opciones: "Auditivo", "Quinético", "Lectura" y "Visual".
 
 ## 2.4 learningstylesxblock.html
 
