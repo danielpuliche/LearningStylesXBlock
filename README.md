@@ -9,7 +9,8 @@ Este XBlock tiene como objetivo obtener el estilo de aprendizaje de los estudian
 - [2. Scripts](#2-Scripts)
   - [2.1 learningstylesxblock.py](#21-learningstylesxblock.py)
   - [2.2 setup.py](#22-setup.py)
-  - [2.3 learningstylesxblock.js](#23-2.3 learningstylesxblock.js)
+  - [2.3 learningstylesxblock.js](#23 learningstylesxblock.js)
+  - [2.4 learningstylesxblock.html](#24 learningstylesxblock.html)
 
 # 1. Test VARK
 VARK es un acrónimo que significa "Modalidad de Aprendizaje Vísuo, Auditivo, Read/Write y Kinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
@@ -79,3 +80,13 @@ El evento click del botón "Enviar" es gestionado por la función anónima regis
 La función $(function($) {}) se ejecuta al cargar la página y verifica si existen los elementos "#grafica" o "#graficaB". Si existen, se recopilan los resultados de las respuestas y se llaman a las funciones graficarResultados() o graficarResultadosBarra() para generar los gráficos.
 
 Las funciones graficarResultados() y graficarResultadosBarra() utilizan la biblioteca de gráficos Chart.js para generar gráficos de áreas polares y de barras, respectivamente. Los gráficos muestran los resultados de la encuesta y están etiquetados con cuatro opciones: "Auditivo", "Cinético", "Lectura" y "Visual".
+
+## 2.4 learningstylesxblock.html
+
+Este código es una plantilla HTML que se está utilizando en algún marco de trabajo de desarrollo web que utiliza un lenguaje de plantilla para realizar ciertas operaciones dinámicas.
+La plantilla incluye una estructura HTML principal con la clase "vark-test".
+Dentro de ella, se usa una sentencia condicional "if" para determinar si se han resuelto los resultados del test (testSolved es una variable que es verdadera o falsa).
+Si se han resuelto los resultados, se muestra el título "Resultados Test VARK" con una lista de resultados que se recorren mediante un bucle "for". Cada resultado consiste en una clave y un valor que se muestran en una lista.
+
+Además, se muestra un gráfico (canvas) con la identificación "graficaB". También se muestra el resultado del estilo de aprendizaje del usuario (userLearningStyle) junto con otro gráfico (canvas) con la identificación "grafica". Si los resultados no se han resuelto, se muestra un título "El cuestionario VARK", un párrafo con texto explicativo y un formulario para enviar las respuestas del cuestionario. El formulario consiste en una serie de preguntas que se recorren mediante un bucle "for". Cada pregunta tiene una serie de respuestas que también se recorren mediante otro bucle "for". Las respuestas son opciones de radio con un valor determinado y deben ser seleccionadas antes de enviarse. Finalmente, hay un botón "Enviar" para enviar las respuestas del formulario.
+
