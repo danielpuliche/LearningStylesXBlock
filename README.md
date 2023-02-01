@@ -8,6 +8,7 @@ Este XBlock tiene como objetivo obtener el estilo de aprendizaje de los estudian
 - [1. Test VARK](#1-Test-VARK)
 - [2. Scripts](#2-Scripts)
   - [2.1 learningstylesxblock.py](#21-learningstylesxblock.py)
+  - [2.2 setup.py](#22-setup.py)
 
 # 1. Test VARK
 VARK es un acrónimo que significa "Modalidad de Aprendizaje Vísuo, Auditivo, Read/Write y Kinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
@@ -43,4 +44,25 @@ student_view: Es la vista principal del XBlock y se muestra a los estudiantes cu
 - **Manejadores:**
 *get_formdata:* Es un manejador que se utiliza para procesar los datos enviados por el formulario del test. La función recibe los datos del formulario y guarda los resultados en los campos correspondientes. La función también devuelve una respuesta en formato JSON para informar al usuario si el procesamiento fue exitoso o no.
 En resumen, este XBlock es un ejemplo de código para crear un test de estilo de aprendizaje y mostrar los resultados a los usuarios en una plataforma de aprendizaje en línea.
+
+## 2.1 learningstylesxblock.py
+Este código es un archivo de configuración de paquete para un "XBlock" de edX llamado "learningstylesxblock".
+
+En la primera línea se importa el módulo "absolute_import" desde el módulo "future". Esto es para garantizar que las importaciones se realicen de manera absoluta y no se confundan con módulos de nombres similares en el mismo paquete.
+
+A continuación, se importa el módulo "os" que proporciona funciones para interactuar con el sistema operativo, y el módulo "setuptools" que proporciona funcionalidad para empaquetar y distribuir paquetes de Python.
+
+La función "package_data" es una función genérica que busca los datos de paquete. Recibe dos argumentos: "pkg" y "roots". La función se usa para encontrar los archivos dentro de los directorios especificados por "roots", y declararlos como datos de paquete para el paquete "pkg". La función recorre cada uno de los "roots" y utiliza "os.walk" para recorrer los subdirectorios y archivos dentro de ellos. Luego, para cada archivo, se agrega su ruta relativa a la lista "data". Finalmente, se devuelve un diccionario con la clave "pkg" y el valor "data".
+
+El método "setup" es una función que se usa para instalar el paquete. Tiene varios argumentos, incluyendo:
+
+name: Nombre del paquete.
+version: Versión del paquete.
+description: Descripción del paquete.
+license: Licencia del paquete.
+packages: Lista de paquetes incluidos en el paquete.
+install_requires: Lista de módulos necesarios para que el paquete funcione.
+entry_points: Un diccionario que especifica las entradas de los puntos de extensión de XBlock.
+package_data: Los datos de paquete, que se obtienen de la función "package_data".
+En este caso, el paquete se llama "learningstylesxblock-xblock" y su versión es "0.1". Se requiere el módulo "XBlock" para su funcionamiento. La entrada del punto de extensión de XBlock es "learningstylesxblock = learningstylesxblock:LearningStylesXBlock", lo que significa que el bloque se registrará con el nombre "learningstylesxblock". Finalmente, los datos de paquete incluyen los archivos en los directorios "static" y "public".
 
