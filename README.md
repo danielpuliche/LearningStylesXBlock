@@ -15,5 +15,5 @@ Los estudiantes auditivos aprenden mejor a través del lenguaje hablado y músic
 Los estudiantes read/write aprenden mejor a través de la escritura y la lectura.
 Los estudiantes kinestésicos aprenden mejor a través de la experiencia práctica y la manipulación de objetos.
 
-El test VARK es un cuestionario diseñado para identificar la modalidad de aprendizaje preferida de un individuo. Es importante tener en cuenta que muchas personas pueden tener preferencias múltiples y que estas preferencias pueden variar según el contexto. Sin embargo, comprender la modalidad de aprendizaje preferida puede ayudar a los estudiantes y a los profesores a adaptar su enfoque de enseñanza y aprendizaje para maximizar la comprensión y el retención de la información.
-https://www.orientacionandujar.es/wp-content/uploads/2014/05/TEST-DE-VARK.pdf
+El test VARK es un cuestionario diseñado para identificar la modalidad de aprendizaje preferida de un individuo. Es importante tener en cuenta que muchas personas pueden tener preferencias múltiples y que estas preferencias pueden variar según el contexto. Sin embargo, comprender la modalidad de aprendizaje preferida puede ayudar a los estudiantes y a los profesores a adaptar su enfoque de enseñanza y aprendizaje para maximizar la comprensión y el retención de la información.[Test VARK]
+(https://www.orientacionandujar.es/wp-content/uploads/2014/05/TEST-DE-VARK.pdf)
