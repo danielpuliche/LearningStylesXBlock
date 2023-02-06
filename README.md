@@ -15,7 +15,7 @@ Este XBlock tiene como objetivo obtener el estilo de aprendizaje de los estudian
   - [2.5 learningstylesxblock.css](#25-learningstylesxblockcss)
 
 # 1. Test VARK
-VARK es un acrónimo que significa "Modalidad de Aprendizaje Vísuo, Auditivo, Read/Write y Kinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
+VARK es un acrónimo que significa "Modalidad de Aprendizaje Visual, Auditivo, Lector/Escritor y Quinestésico". Es un modelo que clasifica a los estudiantes en cuatro categorías según su preferencia de aprendizaje, basándose en la forma en que procesan y recuerdan la información.
 Los estudiantes visuales aprenden mejor a través de imágenes, gráficos y videos.
 Los estudiantes auditivos aprenden mejor a través del lenguaje hablado y música.
 Los estudiantes read/write aprenden mejor a través de la escritura y la lectura.
@@ -91,6 +91,13 @@ Dentro de ella, se usa una sentencia condicional "if" para determinar si se han 
 Si se han resuelto los resultados, se muestra el título "Resultados Test VARK" con una lista de resultados que se recorren mediante un bucle "for". Cada resultado consiste en una clave y un valor que se muestran en una lista.
 
 Además, se muestra un gráfico (canvas) con la identificación "graficaB". También se muestra el resultado del estilo de aprendizaje del usuario (userLearningStyle) junto con otro gráfico (canvas) con la identificación "grafica". Si los resultados no se han resuelto, se muestra un título "El cuestionario VARK", un párrafo con texto explicativo y un formulario para enviar las respuestas del cuestionario. El formulario consiste en una serie de preguntas que se recorren mediante un bucle "for". Cada pregunta tiene una serie de respuestas que también se recorren mediante otro bucle "for". Las respuestas son opciones de radio con un valor determinado y deben ser seleccionadas antes de enviarse. Finalmente, hay un botón "Enviar" para enviar las respuestas del formulario.
+
+<img width="887" alt="image" src="https://user-images.githubusercontent.com/66575625/217001525-f48e2af3-6e32-4ec5-ad7c-d363a7b120f6.png">
+
+<img width="617" alt="image" src="https://user-images.githubusercontent.com/66575625/217001106-2b09dd09-84d5-4fc9-935e-9023711805ca.png">
+
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/66575625/217001329-e0ccc4a7-729e-4187-9cd3-251054717a7a.png">
+
 
 ## 2.5 learningstylesxblock.css
 
